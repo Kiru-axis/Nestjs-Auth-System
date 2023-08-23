@@ -19,11 +19,11 @@ export class MailingService {
     });
 
     const info = await transporter.sendMail({
-      from: 'authApp.gmail.com', // sender address
-      to: data.to, // list of receivers
-      subject: data.subject, // Subject line
-      text: data.text, // plain text body
-      html: data.html, // html body
+      from: 'authApp.gmail.com',
+      to: data.to,
+      subject: data.subject,
+      text: data.text,
+      html: data.html,
     });
 
     console.log('Message sent: %s', info.messageId);
